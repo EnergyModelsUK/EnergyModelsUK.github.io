@@ -10,3 +10,4 @@ markdown: kramdown
 theme: minima
 permalink: pretty
 future: true
+google_analytics: G-P6ZWGPV945
