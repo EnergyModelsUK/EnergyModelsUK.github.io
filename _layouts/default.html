@@ -38,15 +38,28 @@
     main {
       max-width: 900px;
       margin: 2rem auto;
-      background: white;
       padding: 2rem;
+      background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 5px;
+      word-wrap: break-word; /* Helps with breaking long words */
     }
+    p, h1, h2, h3, h4, h5, h6, li, span {
+      overflow-wrap: break-word; /* Break long words to avoid overflow */
+      word-wrap: break-word;     /* Legacy support */
+      word-break: break-word;    /* Break words if necessary */
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
     }
+    img {
+      max-width: 100%;  /* Prevent image from exceeding its container's width */
+      height: auto;     /* Maintain aspect ratio */
+      display: block;   /* Remove inline spacing issues */
+    }
+
   </style>
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
