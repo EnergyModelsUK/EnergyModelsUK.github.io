@@ -11,3 +11,10 @@ theme: minima
 permalink: pretty
 future: true
 google_analytics: G-P6ZWGPV945
+
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
